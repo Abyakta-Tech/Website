@@ -26,32 +26,34 @@ export default function Home() {
 
   return (
     <main>
-      <section className="flex justify-center mt-2 mx-5 lg:mx-48 h-96 relative overflow-hidden rounded-md Animated-Fadein">
+      {/* Carousel Section */}
+      <section className="flex justify-center mt-2 mx-5 h-32 md:h-52 lg:mx-48 lg:h-96 relative overflow-hidden rounded-md Animated-Fadein">
         {carouselImages.map((item, index) => (
           <img
             key={index}
             src={item.src}
             alt={item.alt}
-            className={`absolute w-full object-bottom object-cover brightness-50 transition-opacity duration-500 ${index === currentIndex ? "opacity-100" : "opacity-0"
+            className={`absolute w-full object-center object-cover transition-opacity duration-500 ${index === currentIndex ? "opacity-100" : "opacity-0"
               }`}
           />
         ))}
       </section>
-      <section>
-        <div className="flex justify-center mt-2 Animated-Fadein">
-          <button
-            onClick={() => setCurrentIndex(0)}
-            className={`w-5 h-5 mx-1 rounded-full bg-gray-950 ${currentIndex === 0 ? "bg-gray-600" : ""
-              }`}
-          ></button>
-          <button
-            onClick={() => setCurrentIndex(1)}
-            className={`w-5 h-5 mx-1 rounded-full bg-gray-950 ${currentIndex === 1 ? "bg-gray-600" : ""
-              }`}
-          ></button>
+
+      {/* Navigation Dots */}
+      <section className="flex justify-center mt-1">
+        <div className="flex">
+          {carouselImages.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrentIndex(index)}
+              className={`w-5 h-5 mx-1 rounded-full bg-gray-950 ${currentIndex === index ? "bg-gray-600" : ""}`}
+            ></button>
+          ))}
         </div>
       </section>
-      <section className="flex justify-center mt-2 mx-5 lg:mx-48 ">
+
+      {/* Main Section */}
+      <section className="flex justify-center mt-4 mx-5 lg:mx-48">
         <div className="Animated-Slideup">
           <div className="w-3/4 mx-auto bg-gray-950 rounded-md p-4">
             <h1 className="text-2xl text-white">Welcome to our website!</h1>
