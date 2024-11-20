@@ -26,7 +26,7 @@ export default function Home() {
 
   return (
     <main>
-      <section className="flex justify-center mt-2 mx-5 lg:mx-48 h-96 relative overflow-hidden rounded-md Carouselanimation">
+      <section className="flex justify-center mt-2 mx-5 lg:mx-48 h-96 relative overflow-hidden rounded-md Animated-Fadein">
         {carouselImages.map((item, index) => (
           <img
             key={index}
@@ -38,7 +38,7 @@ export default function Home() {
         ))}
       </section>
       <section>
-        <div className="flex justify-center mt-2 Carouselanimation">
+        <div className="flex justify-center mt-2 Animated-Fadein">
           <button
             onClick={() => setCurrentIndex(0)}
             className={`w-5 h-5 mx-1 rounded-full bg-gray-950 ${currentIndex === 0 ? "bg-gray-600" : ""
@@ -52,7 +52,7 @@ export default function Home() {
         </div>
       </section>
       <section className="flex justify-center mt-2 mx-5 lg:mx-48 ">
-        <div className="HomeMainanimation">
+        <div className="Animated-Slideup">
           <div className="w-3/4 mx-auto bg-gray-950 rounded-md p-4">
             <h1 className="text-2xl text-white">Welcome to our website!</h1>
             <p className="text-white mt-2">

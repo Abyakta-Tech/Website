@@ -1,4 +1,4 @@
-.Navanimation {
+.Animated-Slidedown{
     animation-duration: 0.5s;
     animation-name: slidedown;
     animation-timing-function: ease-in;
@@ -6,7 +6,7 @@
     animation-direction: normal;
 }
 
-.Carouselanimation {
+.Animated-Fadein{
     animation-duration: 1s;
     animation-name: fadein;
     animation-timing-function: ease-in;
@@ -14,7 +14,7 @@
     animation-direction: normal;
 }
 
-.HomeMainanimation {
+.Animated-Slideup{
     animation-duration: 0.5s;
     animation-name: slideup;
     animation-timing-function: ease-in;
