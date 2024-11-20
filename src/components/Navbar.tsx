@@ -1,5 +1,6 @@
 import { Disclosure, DisclosurePanel, DisclosureButton } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/20/solid";
+import './Main.css';
 
 const navigation = [
   { name: 'Home', href: '/' },
@@ -14,7 +15,7 @@ const classNames = (...classes: (string | boolean | undefined)[]) => {
 export default function Navbar() {
 
   return (
-    <Disclosure as="nav" className="bg-gray-950 w-3/4 mx-auto rounded-md">
+    <Disclosure as="nav" className="bg-gray-950 w-3/4 mx-auto rounded-md Navanimation">
       {({ open }) => (
         <>
           <div className="flex items-center justify-between h-12 px-4 sm:px-6 lg:px-8 lg:justify-start">

@@ -26,7 +26,7 @@ export default function Home() {
 
   return (
     <main>
-      <section className="flex justify-center mt-2 mx-5 lg:mx-48 h-96 relative overflow-hidden rounded-md">
+      <section className="flex justify-center mt-2 mx-5 lg:mx-48 h-96 relative overflow-hidden rounded-md Carouselanimation">
         {carouselImages.map((item, index) => (
           <img
             key={index}
@@ -36,6 +36,34 @@ export default function Home() {
               }`}
           />
         ))}
+      </section>
+      <section>
+        <div className="flex justify-center mt-2 Carouselanimation">
+          <button
+            onClick={() => setCurrentIndex(0)}
+            className={`w-5 h-5 mx-1 rounded-full bg-gray-950 ${currentIndex === 0 ? "bg-gray-600" : ""
+              }`}
+          ></button>
+          <button
+            onClick={() => setCurrentIndex(1)}
+            className={`w-5 h-5 mx-1 rounded-full bg-gray-950 ${currentIndex === 1 ? "bg-gray-600" : ""
+              }`}
+          ></button>
+        </div>
+      </section>
+      <section className="flex justify-center mt-2 mx-5 lg:mx-48 ">
+        <div className="HomeMainanimation">
+          <div className="w-3/4 mx-auto bg-gray-950 rounded-md p-4">
+            <h1 className="text-2xl text-white">Welcome to our website!</h1>
+            <p className="text-white mt-2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+              dignissim, nunc nec fermentum ultricies, lorem justo ultricies
+              libero, nec tincidunt nisi erat nec purus. Sed ut nisi nec purus
+              cursus ultricies. Donec nec eros auctor, tincidunt nunc nec, rhoncus
+              libero. Nullam nec nunc
+            </p>
+          </div>
+        </div>
       </section>
     </main>
   );

@@ -1,0 +1,50 @@
+.Navanimation {
+    animation-duration: 0.5s;
+    animation-name: slidedown;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+
+.Carouselanimation {
+    animation-duration: 1s;
+    animation-name: fadein;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+
+.HomeMainanimation {
+    animation-duration: 0.5s;
+    animation-name: slideup;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+
+@keyframes slidedown {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideup {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
