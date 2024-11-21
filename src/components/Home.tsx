@@ -57,7 +57,7 @@ export default function Home() {
         <div className="Animated-Slideup">
           <div className="w-3/4 mx-auto bg-gray-950 rounded-md p-4">
             <h1 className="text-2xl text-white">Welcome to our website!</h1>
-            <p className="text-white mt-2">
+            <p className="text-white mt-2 text-justify">
               We are a team of passionate individuals dedicated to innovation, collaboration, and growth. Whether you're here to learn more about our projects, meet the team, or explore new opportunities, you've come to the right place. Together, we aim to create impactful solutions and foster a community where ideas thrive. Thank you for visiting, and we hope you find inspiration and value in what we share.
             </p>
           </div>
