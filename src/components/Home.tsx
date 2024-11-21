@@ -40,7 +40,7 @@ export default function Home() {
       </section>
 
       {/* Navigation Dots */}
-      <section className="flex justify-center mt-1">
+      <section className="flex justify-center mt-2">
         <div className="flex">
           {carouselImages.map((_, index) => (
             <button
@@ -53,7 +53,7 @@ export default function Home() {
       </section>
 
       {/* Main Section */}
-      <section className="flex justify-center mt-4 mx-5 lg:mx-48">
+      <section className="flex justify-center mt-2 mx-5 lg:mx-48">
         <div className="Animated-Slideup">
           <div className="w-3/4 mx-auto bg-gray-950 rounded-md p-4 drop-shadow-xl">
             <h1 className="text-xl lg:text-2xl text-white">Welcome to Abyakta!</h1>
