@@ -56,7 +56,7 @@ export default function Home() {
       <section className="flex justify-center mt-4 mx-5 lg:mx-48">
         <div className="Animated-Slideup">
           <div className="w-3/4 mx-auto bg-gray-950 rounded-md p-4 drop-shadow-xl">
-            <h1 className="text-xl lg:text-2xl text-white">Welcome to our website!</h1>
+            <h1 className="text-xl lg:text-2xl text-white">Welcome to Abyakta!</h1>
             <p className="text-white text-sm lg:text-md mt-2 text-justify">
               We are a team of passionate individuals dedicated to innovation, collaboration, and growth. Whether you're here to learn more about our projects, meet the team, or explore new opportunities, you've come to the right place. Together, we aim to create impactful solutions and foster a community where ideas thrive. Thank you for visiting, and we hope you find inspiration and value in what we share.
             </p>
