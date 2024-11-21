@@ -1,6 +1,7 @@
 import './App.css'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Home from './components/Home'
+import Error404 from './components/Error404'
 import Navbar from './components/Navbar'
 import { PacmanLoader } from 'react-spinners'
 import { useState, useEffect } from 'react'
@@ -12,8 +13,9 @@ function App() {
     setLoading(true)
     setTimeout(() => {
       setLoading(false)
-    }, 2000)
+    }, 1000)
   }, [])
+
 
   return (
     <>
@@ -27,6 +29,7 @@ function App() {
           <Router>
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="*" element={<Error404 />} />
             </Routes>
           </Router>
         </div>

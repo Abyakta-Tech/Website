@@ -46,7 +46,7 @@ export default function Home() {
             <button
               key={index}
               onClick={() => setCurrentIndex(index)}
-              className={`w-5 h-5 mx-1 rounded-full bg-gray-950 ${currentIndex === index ? "bg-gray-600" : ""}`}
+              className={`w-5 h-5 mx-1 rounded-full ${currentIndex === index ? "bg-gray-600" : "bg-gray-950"}`}
             ></button>
           ))}
         </div>
@@ -58,11 +58,7 @@ export default function Home() {
           <div className="w-3/4 mx-auto bg-gray-950 rounded-md p-4">
             <h1 className="text-2xl text-white">Welcome to our website!</h1>
             <p className="text-white mt-2">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-              dignissim, nunc nec fermentum ultricies, lorem justo ultricies
-              libero, nec tincidunt nisi erat nec purus. Sed ut nisi nec purus
-              cursus ultricies. Donec nec eros auctor, tincidunt nunc nec, rhoncus
-              libero. Nullam nec nunc
+              We are a team of passionate individuals dedicated to innovation, collaboration, and growth. Whether you're here to learn more about our projects, meet the team, or explore new opportunities, you've come to the right place. Together, we aim to create impactful solutions and foster a community where ideas thrive. Thank you for visiting, and we hope you find inspiration and value in what we share.
             </p>
           </div>
         </div>
