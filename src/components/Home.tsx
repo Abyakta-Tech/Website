@@ -9,7 +9,7 @@ const carouselImages = [
 
 export default function Home() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isFading, setIsFading] = useState(false);
+  const [, setIsFading] = useState(false);
 
   const nextImage = () => {
     setIsFading(true);
@@ -59,6 +59,10 @@ export default function Home() {
             <h1 className="text-xl lg:text-2xl text-white">Welcome to Abyakta!</h1>
             <p className="text-white text-sm lg:text-md mt-2 text-justify">
               We are a team of passionate individuals dedicated to innovation, collaboration, and growth. Whether you're here to learn more about our projects, meet the team, or explore new opportunities, you've come to the right place. Together, we aim to create impactful solutions and foster a community where ideas thrive. Thank you for visiting, and we hope you find inspiration and value in what we share.
+            </p>
+            <h1 className="text-xl lg:text-2xl text-white mt-4">About us.</h1>
+            <p className="text-white text-sm lg:text-md mt-2 text-justify">
+              We are part of State University of Surabaya's (Universitas Negeri Surabaya) Informatics Engineering Department. Our team consists of students who are passionate about technology and its potential to create positive change. We are committed to fostering a culture of innovation, collaboration, and growth. Our projects are designed to address real-world challenges and create meaningful impact. We believe in the power of technology to transform lives and make the world a better place. We are always looking for new opportunities to collaborate with like-minded individuals and organizations. If you share our vision and values, we would love to hear from you. Together, we can create a brighter future for all.
             </p>
           </div>
         </div>
