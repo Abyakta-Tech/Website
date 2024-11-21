@@ -62,7 +62,10 @@ export default function Home() {
             </p>
             <h1 className="text-xl lg:text-2xl text-white mt-4">About us.</h1>
             <p className="text-white text-sm lg:text-md mt-2 text-justify">
-              We are part of State University of Surabaya's (Universitas Negeri Surabaya) Informatics Engineering Department. Our team consists of students who are passionate about technology and its potential to create positive change. We are committed to fostering a culture of innovation, collaboration, and growth. Our projects are designed to address real-world challenges and create meaningful impact. We believe in the power of technology to transform lives and make the world a better place. We are always looking for new opportunities to collaborate with like-minded individuals and organizations. If you share our vision and values, we would love to hear from you. Together, we can create a brighter future for all.
+              Part of State University of Surabaya's (Universitas Negeri Surabaya) Informatics Engineering Department.
+            </p>
+            <p className="text-white text-sm lg:text-md mt-2 text-justify">
+              Created for the purpose of developing and implementing innovative projects that benefit the community.
             </p>
           </div>
         </div>
