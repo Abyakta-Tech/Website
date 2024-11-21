@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Home from './components/Home'
 import Error404 from './components/Error404'
 import Navbar from './components/Navbar'
-import { PacmanLoader } from 'react-spinners'
+import { PropagateLoader } from 'react-spinners'
 import { useState, useEffect } from 'react'
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
     <>
       {loading ? (
         <div className="flex items-center justify-center h-screen bg-gray-800">
-          <PacmanLoader color="#FFD700" size={50} />
+          <PropagateLoader color="#FFFFFF" size={50} />
         </div>
       ) : (
         <div className="bg-gray-800 h-screen">
