@@ -1,6 +1,7 @@
 import './App.css'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Home from './components/Home'
+import Team from './components/Team'
 import Error404 from './components/Error404'
 import Navbar from './components/Navbar'
 import { PropagateLoader } from 'react-spinners'
@@ -24,11 +25,12 @@ function App() {
           <PropagateLoader color="#FFFFFF" size={50} />
         </div>
       ) : (
-        <div className="bg-gray-800 h-screen">
+        <div className="bg-gray-800 min-h-screen">
           <Navbar />
           <Router>
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="/team" element={<Team />} />
               <Route path="*" element={<Error404 />} />
             </Routes>
           </Router>

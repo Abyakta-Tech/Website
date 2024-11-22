@@ -64,7 +64,6 @@ export default function Home() {
             <p className="text-white text-sm lg:text-md mt-2 text-justify">
               Part of State University of Surabaya's (Universitas Negeri Surabaya) Informatics Engineering Department. Created for the purpose of developing and implementing innovative projects that benefit the community.
             </p>
-
           </div>
         </div>
       </section>
