@@ -31,12 +31,14 @@ const Teamlist = [
   },
 ];
 
+const contactmail = import.meta.env.VITE_CONTACT_MAIL;
+
 export default function Team() {
   return (
     <main>
       {/* Team Section */}
       <section className="flex justify-center mt-5 mx-5 lg:mx-48">
-        <div className="Animated-Slideup flex flex-wrap justify-around">
+        <div className="Animated-Fadein flex flex-wrap justify-around">
           {Teamlist.map((item) => (
             <div className="w-64 m-3 bg-gray-950 rounded-md p-4 drop-shadow-xl">
               <div className="flex justify-center items-center mb-2">
@@ -49,6 +51,21 @@ export default function Team() {
               <h1 className="text-sm lg:text-sm text-white">{item.role}</h1>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* Footer Section */}
+      <section className="flex justify-center mt-5 mx-5 lg:mx-48">
+        <div className="Animated-Slideup">
+          <div className="w-3/4 mx-auto bg-gray-950 rounded-md p-4 drop-shadow-xl">
+            <h1 className="text-xl lg:text-2xl text-white">Contact Us</h1>
+            <p className="text-white text-sm lg:text-md mt-2 text-justify">
+              If you have any questions or concerns, please feel free to contact us at{" "}
+              <span className="text-blue-500">
+                <a href={`mailto: ${contactmail}`}>{contactmail}</a>
+              </span>
+            </p>
+          </div>
         </div>
       </section>
     </main>
