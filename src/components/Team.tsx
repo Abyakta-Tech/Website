@@ -1,15 +1,36 @@
 import Arif from "../assets/profile/Arip.png";
+import Deva from "../assets/profile/Deva.jpeg";
 
 const Teamlist = [
   {
     name: "Mohammad Ariffansyah",
     role: "Frontend and Backend Developer",
     image: Arif,
+    porto: "https://arpthef.my.id/",
   },
   {
     name: "I Made Nandana Devadatta Giri",
     role: "Frontend Developer and UI/UX Designer",
+    image: Deva,
+    porto: "",
+  },
+  {
+    name: "Nabil Akbar",
+    role: "Frontend Developer",
     image: "https://st.depositphotos.com/2101611/3925/v/450/depositphotos_39258143-stock-illustration-businessman-avatar-profile-picture.jpg",
+    porto: "",
+  },
+  {
+    name: "Agri Azzukruf",
+    role: "Buissness Analyst",
+    image: "https://st.depositphotos.com/2101611/3925/v/450/depositphotos_39258143-stock-illustration-businessman-avatar-profile-picture.jpg",
+    porto: "",
+  },
+  {
+    name: "Josua Moreno Silitonga",
+    role: "Support System",
+    image: "https://st.depositphotos.com/2101611/3925/v/450/depositphotos_39258143-stock-illustration-businessman-avatar-profile-picture.jpg",
+    porto: "",
   },
 ];
 
@@ -29,7 +50,7 @@ export default function Team() {
                   alt={item.name}
                   className="h-48 w-48 object-cover object-center" />
               </div>
-              <h1 className="text-md lg:text-md text-white"><a href="https://arpthef.my.id">{item.name}</a></h1>
+              <h1 className="text-md lg:text-md text-white"><a href={item.porto}>{item.name}</a></h1>
               <h1 className="text-sm lg:text-sm text-white">{item.role}</h1>
             </div>
           ))}
