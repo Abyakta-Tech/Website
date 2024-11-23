@@ -7,8 +7,8 @@ const Teamlist = [
     image: Arif,
   },
   {
-    name: "I Made Devadatta Giri",
-    role: "Frontend Developer",
+    name: "I Made Nandana Devadatta Giri",
+    role: "Frontend Developer and UI/UX Designer",
     image: "https://st.depositphotos.com/2101611/3925/v/450/depositphotos_39258143-stock-illustration-businessman-avatar-profile-picture.jpg",
   },
 ];
