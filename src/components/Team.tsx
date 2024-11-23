@@ -1,33 +1,15 @@
+import Arif from "../assets/profile/Arip.png";
+
 const Teamlist = [
   {
     name: "Mohammad Ariffansyah",
-    role: "Front-end and Back-end Dev",
-    image: "https://miro.medium.com/v2/resize:fit:1024/0*wATbQ49jziZTyhZH.jpg",
+    role: "Frontend and Backend Developer",
+    image: Arif,
   },
   {
-    name: "Mohammad Ariffansyah",
-    role: "Front-end and Back-end Dev",
-    image: "https://miro.medium.com/v2/resize:fit:1024/0*wATbQ49jziZTyhZH.jpg",
-  },
-  {
-    name: "Mohammad Ariffansyah",
-    role: "Front-end and Back-end Dev",
-    image: "https://miro.medium.com/v2/resize:fit:1024/0*wATbQ49jziZTyhZH.jpg",
-  },
-  {
-    name: "Mohammad Ariffansyah",
-    role: "Front-end and Back-end Dev",
-    image: "https://miro.medium.com/v2/resize:fit:1024/0*wATbQ49jziZTyhZH.jpg",
-  },
-  {
-    name: "Mohammad Ariffansyah",
-    role: "Front-end and Back-end Dev",
-    image: "https://miro.medium.com/v2/resize:fit:1024/0*wATbQ49jziZTyhZH.jpg",
-  },
-  {
-    name: "Mohammad Ariffansyah",
-    role: "Front-end and Back-end Dev",
-    image: "https://miro.medium.com/v2/resize:fit:1024/0*wATbQ49jziZTyhZH.jpg",
+    name: "I Made Devadatta Giri",
+    role: "Frontend Developer",
+    image: "https://st.depositphotos.com/2101611/3925/v/450/depositphotos_39258143-stock-illustration-businessman-avatar-profile-picture.jpg",
   },
 ];
 
@@ -47,7 +29,7 @@ export default function Team() {
                   alt={item.name}
                   className="h-48 w-48 object-cover object-center" />
               </div>
-              <h1 className="text-md lg:text-md text-white">{item.name}</h1>
+              <h1 className="text-md lg:text-md text-white"><a href="https://arpthef.my.id">{item.name}</a></h1>
               <h1 className="text-sm lg:text-sm text-white">{item.role}</h1>
             </div>
           ))}

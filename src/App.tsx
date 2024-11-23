@@ -2,6 +2,7 @@ import './App.css'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Home from './components/Home'
 import Team from './components/Team'
+import Project from './components/Project'
 import Error404 from './components/Error404'
 import Navbar from './components/Navbar'
 import { PropagateLoader } from 'react-spinners'
@@ -31,6 +32,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/team" element={<Team />} />
+              <Route path="/projects" element={<Project />} />
               <Route path="*" element={<Error404 />} />
             </Routes>
           </Router>
