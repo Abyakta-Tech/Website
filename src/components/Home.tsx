@@ -39,11 +39,19 @@ export default function Home() {
           alt="Header Image"
           className="absolute drop-shadow-xl h-screen-nav brightness-50 object-cover"
         />
-        <div className="absolute top-32 left-5 z-20 text-white px-4">
-          <h1 className="text-xl md:text-3xl font-bold mb-2">Welcome to Abyakta Tech</h1>
-          <p className="text-sm md:text-lg max-w-md">
+        <div className="absolute top-48 left-5 z-20 text-white px-4">
+          <h1 className="text-xl md:text-6xl font-bold mb-2">Welcome to Abyakta Tech</h1>
+          <p className="text-sm md:text-lg max-w-md mt-4">
             Discover innovative solutions and cutting-edge technology tailored for your needs.
           </p>
+          <p className="text-base font-semibold mb-6 mt-6">Best Regards, Abyakta Teams!</p>
+          <button
+            onClick={handleScrollToWelcomeSection}
+            className="bg-black text-white py-2 px-4 rounded-full shadow-lg hover:bg-gray-700 transition duration-300"
+          >
+            Scroll Here
+          </button>
+
         </div>
         <div className="absolute bottom-5 w-full flex justify-center z-20">
           <button onClick={handleScrollToWelcomeSection} className="animate-bounce">
