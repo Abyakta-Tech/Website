@@ -30,7 +30,7 @@ export default function Home() {
           alt="Header Image"
           className="absolute drop-shadow-xl h-screen-nav brightness-50 object-cover"
         />
-        <div className="absolute top-48 left-5 z-20 text-white px-4">
+        <div className="absolute top-60 left-5 z-20 text-white px-4">
           <h1 className="text-xl md:text-6xl font-bold mb-2">Welcome to Abyakta Tech</h1>
           <p className="text-sm md:text-lg max-w-md mt-4">
             Discover innovative solutions and cutting-edge technology tailored for your needs.
