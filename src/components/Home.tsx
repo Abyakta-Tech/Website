@@ -23,12 +23,12 @@ export default function Home() {
   return (
     <main>
       {/* Carousel Section */}
-      <section className="flex justify-center h-screen-nav relative overflow-hidden Animated-Fadein">
+      <section className="flex justify-center h-screen-nav relative overflow-hidden Animated-Fadein shadow-md">
         <div className="absolute inset-0 bg-gradient-to-r from-gray-950 to-transparent z-10" />
         <img
           src={Headerimage}
           alt="Header Image"
-          className="absolute drop-shadow-xl h-screen-nav brightness-50 object-cover"
+          className="absolute h-screen-nav brightness-50 object-cover"
         />
         <div className="absolute top-60 left-5 z-20 text-white px-4">
           <h1 className="text-xl md:text-6xl font-bold mb-2">Welcome to Abyakta Tech</h1>
@@ -38,7 +38,7 @@ export default function Home() {
           <p className="text-base font-semibold mb-6 mt-6">Best Regards, Abyakta Teams!</p>
           <button
             onClick={handleScrollToWelcomeSection}
-            className="bg-black text-white py-2 px-4 rounded-full shadow-lg hover:bg-gray-700 transition duration-300"
+            className="bg-black text-white py-2 px-4 rounded-full shadow-xl hover:bg-gray-700 transition duration-300"
           >
             Scroll Here
           </button>
@@ -62,7 +62,7 @@ export default function Home() {
       <section className="flex flex-col pt-20 lg:flex-row justify-center items-center" id="welcomesection">
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 lg:gap-6 lg:mx-10 order-last lg:order-none">
           {DivisionSectionImages.map((item,) => (
-            <div className="flex flex-col items-center text-center">
+            <div className="flex flex-col items-center text-center shadow-xl">
               <img
                 className="w-24 h-24 lg:w-36 lg:h-36 object-cover"
                 src={item.image}
@@ -76,7 +76,7 @@ export default function Home() {
             What Division That We Have?!
           </h1>
           <div className="flex justify-center lg:justify-end mt-2">
-            <a href="/" className="bg-black text-white py-2 px-4 rounded-full shadow-lg hover:bg-gray-700 transition duration-300">
+            <a href="/" className="bg-black text-white py-2 px-4 rounded-full shadow-md hover:bg-gray-700 transition duration-300">
               Learn More
             </a>
           </div>
@@ -92,7 +92,7 @@ export default function Home() {
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 lg:gap-6 lg:mx-10 mt-8">
           {CoreSectionImages.map((item,) => (
-            <div className="flex flex-col items-center text-center">
+            <div className="flex flex-col items-center text-center shadow-xl">
               <img
                 className="w-24 h-24 lg:w-36 lg:h-36 object-cover"
                 src={item.image}
