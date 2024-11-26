@@ -33,7 +33,7 @@ export default function Home() {
         <div className="absolute top-60 left-5 z-20 text-white px-4">
           <h1 className="text-xl md:text-6xl font-bold mb-2">Welcome to Abyakta Tech</h1>
           <p className="text-sm md:text-lg max-w-md mt-4">
-            Discover innovative solutions and cutting-edge technology tailored for your needs.
+            We are a team of developers who are still learning and developing our skills.
           </p>
           <p className="text-base font-semibold mb-6 mt-6">Best Regards, Abyakta Teams!</p>
           <button
@@ -42,7 +42,6 @@ export default function Home() {
           >
             Scroll Here
           </button>
-
         </div>
         <div className="absolute bottom-5 w-full flex justify-center z-20">
           <button onClick={handleScrollToWelcomeSection} className="animate-bounce">
@@ -76,14 +75,18 @@ export default function Home() {
           <h1 className="text-xl font-bold md:text-3xl lg:text-4xl text-center lg:text-end">
             What Division That We Have?!
           </h1>
-          <p className="text-center lg:text-end">Abyakta Team</p>
+          <div className="flex justify-center lg:justify-end mt-2">
+            <a href="/" className="bg-black text-white py-2 px-4 rounded-full shadow-lg hover:bg-gray-700 transition duration-300">
+              Learn More
+            </a>
+          </div>
         </div>
       </section>
       {/* Core Team Section */}
       <section className="flex flex-col justify-center items-center pt-20">
         <div className="flex flex-col w-11/12 mt-5 md:w-3/4 lg:w-1/2 text-white mb-8 lg:mb-0 lg:mr-3">
           <h1 className="text-xl font-bold md:text-3xl lg:text-4xl text-center">
-            Meet Our Core Team!
+            Meet Our Team!
           </h1>
           <p className="text-center">Abyakta Team</p>
         </div>
