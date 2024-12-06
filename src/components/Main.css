@@ -1,3 +1,10 @@
+.navbar-fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
 .h-screen-nav{
     height: calc(100vh - 48px);
 }

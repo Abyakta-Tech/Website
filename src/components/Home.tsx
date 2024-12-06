@@ -23,12 +23,12 @@ export default function Home() {
   return (
     <main>
       {/* Carousel Section */}
-      <section className="flex justify-center h-screen-nav relative overflow-hidden Animated-Fadein shadow-md">
+      <section className="flex justify-center h-screen relative overflow-hidden Animated-Fadein shadow-md">
         <div className="absolute inset-0 bg-gradient-to-r from-gray-950 to-transparent z-10" />
         <img
           src={Headerimage}
           alt="Header Image"
-          className="absolute h-screen-nav brightness-50 object-cover"
+          className="absolute h-screen brightness-50 object-cover"
         />
         <div className="absolute top-60 left-5 z-20 text-white px-4">
           <h1 className="text-xl md:text-6xl font-bold mb-2">Welcome to Abyakta Tech</h1>

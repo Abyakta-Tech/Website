@@ -46,7 +46,7 @@ export default function Team() {
   return (
     <main>
       {/* Team Section */}
-      <section className="flex justify-center mt-5 mx-5 lg:mx-48">
+      <section className="flex justify-center pt-24 mx-5 lg:mx-48">
         <div className="Animated-Fadein flex flex-wrap justify-around">
           {Teamlist.map((item) => (
             <div className="w-64 m-3 bg-gray-950 rounded-md p-4 drop-shadow-xl">

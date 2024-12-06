@@ -15,7 +15,7 @@ const classNames = (...classes: (string | boolean | undefined)[]) => {
 export default function Navbar() {
 
   return (
-    <Disclosure as="nav" className="bg-gray-950 shadow-xl mx-auto Animated-Slidedown">
+    <Disclosure as="nav" className="bg-gray-950 shadow-xl mx-auto Animated-Slidedown navbar-fixed">
       {({ open }) => (
         <>
           <div className="flex items-center justify-between h-12 px-4 sm:px-6 lg:px-8 lg:justify-start">

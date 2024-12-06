@@ -16,7 +16,7 @@ const Projects = [
 export default function Project() {
   return (
     <main>
-      <section className="flex justify-center items-center mt-5 mx-5 lg:mx-48">
+      <section className="flex justify-center items-center pt-24 mx-5 lg:mx-48">
         <div className="Animated-Fadein flex flex-wrap justify-around">
           {Projects.map((item) => (
             <div className="w-64 m-3 bg-gray-950 rounded-md p-4 drop-shadow-xl">
