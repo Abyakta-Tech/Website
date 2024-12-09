@@ -1,5 +1,6 @@
 import Arif from "../assets/profile/Arip.png";
 import Deva from "../assets/profile/Deva.jpeg";
+import Nabil from "../assets/profile/Nabil.jpeg";
 
 const Teamlist = [
   {
@@ -17,7 +18,7 @@ const Teamlist = [
   {
     name: "Nabil Akbar",
     role: "Frontend Developer",
-    image: "https://st.depositphotos.com/2101611/3925/v/450/depositphotos_39258143-stock-illustration-businessman-avatar-profile-picture.jpg",
+    image: Nabil,
     porto: "",
   },
   {
